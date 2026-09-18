@@ -1,0 +1,5 @@
+algorithms:
+  - backtracking_dfs
+  - backtracking_mrv
+  - a_star
+max_backtracks_limit: 100000
