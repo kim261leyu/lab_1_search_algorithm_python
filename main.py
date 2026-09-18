@@ -109,7 +109,7 @@ def print_results(results, as_table=True):
         df = pd.DataFrame([r.__dict__ for r in results])
         df.columns = ['Algorithm', 'Path Cost', 'Path Length', 'Nodes Expanded',
                       'Max Frontier', 'Time (ms)', 'Peak Mem (KB)', 'Success']
-        print(df.to_string(index=False))
+        print(df.to_markdown(index=False))
     else:
         for r in results:
             print(f"{r.algorithm}:")

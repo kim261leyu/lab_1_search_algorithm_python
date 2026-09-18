@@ -30,76 +30,85 @@ Backtracking DFS (аналог DFS для CSP-задач), оскільки тр
 BFS не застосовний до простору станів з розгалуженням 9^(кількість 
 порожніх клітинок).
 
-=== EASY ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier  Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS         51           51            4432            51  36.611639          36600     True
-Backtracking + MRV         51           51              51            51   3.470363          36640     True
-                A*         51           51             504            20  13.762555         161872     True
-               opt         51           51              51            51   2.093109          45392     True
+	=== EASY ===
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |          51 |            51 |             4432 |             51 |    38.3849  |           36600 | True      |
+| Backtracking + MRV |          51 |            51 |               51 |             51 |     3.71085 |           36640 | True      |
+| A*                 |          51 |            51 |              504 |             20 |    14.984   |          161872 | True      |
+| opt                |          51 |            51 |               51 |             51 |     2.25819 |           45392 | True      |
 
 === MEDIUM ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier  Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS         43           43              84            43   0.956175          34816     True
-Backtracking + MRV         43           43              43            43   2.666005          34376     True
-                A*         43           43              64             3   1.314732          36048     True
-               opt         43           43              43            43   1.390275          38920     True
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |          43 |            43 |               84 |             43 |    0.933187 |           34816 | True      |
+| Backtracking + MRV |          43 |            43 |               43 |             43 |    2.7741   |           34376 | True      |
+| A*                 |          43 |            43 |               64 |              3 |    1.34437  |           37256 | True      |
+| opt                |          43 |            43 |               43 |             43 |    1.47428  |           40904 | True      |
 
 === HARD ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier  Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS         43           43             115            43   1.156235          34272     True
-Backtracking + MRV         43           43              43            43   2.846213          34344     True
-                A*         43           43              82             3   1.646479          35496     True
-               opt         43           43              43            43   1.408197          39128     True
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |          43 |            43 |              115 |             43 |     1.20063 |           34272 | True      |
+| Backtracking + MRV |          43 |            43 |               43 |             43 |     2.90307 |           34344 | True      |
+| A*                 |          43 |            43 |               82 |              3 |     1.75938 |           35472 | True      |
+| opt                |          43 |            43 |               43 |             43 |     1.615   |           39128 | True      |
 
 === EXPERT ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier  Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS         51           51             895            51   7.743739          36520     True
-Backtracking + MRV         51           51              57            51   4.149582          36560     True
-                A*         51           51             369            18   7.301617         126536     True
-               opt         51           51              51            46   2.108504          40728     True
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |          51 |            51 |              895 |             51 |     8.00529 |           36520 | True      |
+| Backtracking + MRV |          51 |            51 |               57 |             51 |     4.34689 |           36560 | True      |
+| A*                 |          51 |            51 |              369 |             18 |     8.0028  |          128864 | True      |
+| opt                |          51 |            51 |               51 |             46 |     2.25591 |           40600 | True      |
 
 === MASTER ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier  Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS         51           51             965            51   8.205854          37008     True
-Backtracking + MRV         51           51              51            51   3.470648          36536     True
-                A*         51           51             460            16   8.412413         131968     True
-               opt         51           51              67            46   3.047302          40296     True
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |          51 |            51 |              965 |             51 |     8.63505 |           37008 | True      |
+| Backtracking + MRV |          51 |            51 |               51 |             51 |     3.70267 |           36536 | True      |
+| A*                 |          51 |            51 |              460 |             16 |     9.06984 |          131944 | True      |
+| opt                |          51 |            51 |               67 |             46 |     3.29895 |           40296 | True      |
 
 === EXTREME ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier  Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS         53           53             336            53   3.296950          37536     True
-Backtracking + MRV         53           53              56            53   4.015644          37064     True
-                A*         53           53             406            15   7.980233         145448     True
-               opt         53           53              72            47   3.673725          40408     True
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |          53 |            53 |              336 |             53 |     3.47558 |           37536 | True      |
+| Backtracking + MRV |          53 |            53 |               56 |             53 |     4.2848  |           37064 | True      |
+| A*                 |          53 |            53 |              406 |             15 |     8.49191 |          145424 | True      |
+| opt                |          53 |            53 |               72 |             47 |     3.8826  |           40280 | True      |
 
 === EVEREST ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier    Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS         60           60           61964            60   567.820151          39472     True
-Backtracking + MRV         60           60            1373            60   127.183909          39032     True
-                A*         60           60          517480           131 11049.345862         862360     True
-               opt         60           60             671            51    54.167960          46816     True
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |          60 |            60 |            61964 |             60 |    591.759  |           39472 | True      |
+| Backtracking + MRV |          60 |            60 |             1373 |             60 |    123.32   |           39032 | True      |
+| A*                 |          60 |            60 |           517480 |            131 |  11559.3    |          861696 | True      |
+| opt                |          60 |            60 |              671 |             51 |     58.3818 |           46560 | True      |
 
 === ESCARGOT ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier  Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS         58           58           17625            58 161.618861          38376     True
-Backtracking + MRV         58           58             241            58  18.393816          38424     True
-                A*         58           58            1801            46  36.231030         323832     True
-               opt         58           58             130            49   8.259568          41816     True
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |          58 |            58 |            17625 |             58 |   179.245   |           38376 | True      |
+| Backtracking + MRV |          58 |            58 |              241 |             58 |    19.8713  |           38424 | True      |
+| A*                 |          58 |            58 |             1801 |             46 |    39.1128  |          323808 | True      |
+| opt                |          58 |            58 |              130 |             49 |     8.93376 |           41816 | True      |
 
 === PLATINUM_BLONDE ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier  Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS         61           61            5750            61  51.430390          40240     True
-Backtracking + MRV         61           61             292            61  25.120897          40320     True
-                A*         61           61            5294           120 106.641920         818400     True
-               opt         61           61             225            59  16.242927          45080     True
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |          61 |            61 |             5750 |             61 |     56.4936 |           40240 | True      |
+| Backtracking + MRV |          61 |            61 |              292 |             61 |     27.4298 |           40320 | True      |
+| A*                 |          61 |            61 |             5294 |            120 |    117.76   |          817992 | True      |
+| opt                |          61 |            61 |              225 |             59 |     18.0249 |           45016 | True      |
 
 === AVERAGE ACROSS ALL DIFFICULTIES ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier   Time (ms)  Peak Mem (KB)  Success
-  Backtracking DFS  52.333333    52.333333    10240.666667     52.333333   93.204444   37204.444444     True
-Backtracking + MRV  52.333333    52.333333      245.222222     52.333333   21.257453   37032.888889     True
-                A*  52.333333    52.333333    58495.555556     41.333333 1248.070760  293551.111111     True
-               opt  52.333333    52.333333      150.333333     48.333333   10.265730   42064.888889     True
-
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking DFS   |     52.3333 |       52.3333 |        10240.7   |        52.3333 |     98.6813 |         37204.4 | True      |
+| Backtracking + MRV |     52.3333 |       52.3333 |          245.222 |        52.3333 |     21.3715 |         37032.9 | True      |
+| A*                 |     52.3333 |       52.3333 |        58495.6   |        41.3333 |   1306.64   |        293814   | True      |
+| opt                |     52.3333 |       52.3333 |          150.333 |        48.3333 |     11.125  |         42221.3 | True      |
 
 Результати показують, що Backtracking+MRV та A* суттєво скорочують 
 кількість розкритих вузлів порівняно з чистим DFS (напр., 4432 → 51 
@@ -183,6 +192,7 @@ Backtracking + MRV  52.333333    52.333333      245.222222     52.333333   21.36
 Якщо оцінити його на Unsolvable_28, одному з найскладніших судоку в світі, можна помітити більш значні покращення:
 
 === Testing unsolvable_28 ===
-         Algorithm  Path Cost  Path Length  Nodes Expanded  Max Frontier   Time (ms)  Peak Mem (KB)  Success
-Backtracking + MRV         64           64           63030            64 6477.985889          41160     True
-               opt         64           64             386            47   31.857556          46136     True
+| Algorithm          |   Path Cost |   Path Length |   Nodes Expanded |   Max Frontier |   Time (ms) |   Peak Mem (KB) | Success   |
+|:-------------------|------------:|--------------:|-----------------:|---------------:|------------:|----------------:|:----------|
+| Backtracking + MRV |          64 |            64 |            63030 |             64 |   6551.88   |           41160 | True      |
+| opt                |          64 |            64 |              386 |             47 |     35.1791 |           45688 | True      |
